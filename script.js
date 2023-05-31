@@ -10,7 +10,7 @@ function generateRepo() {
     }).then(response => response.json()).then(data => {
         let repoEl = data['items']
         for(let element of repoEl) {
-            repo.innerHTML = element['owner']['url']
+            repo.innerHTML = element['owner']['repos_url']
         } 
     })
 }
